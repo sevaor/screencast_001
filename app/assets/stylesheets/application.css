@@ -1,0 +1,24 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_tree . 
+ *= require_self
+*/
+
+body {
+  background-color: #ddd;
+}
+
+#container {
+  width: 460px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  padding: 30px 40px;
+}
+
+#loader {
+  display: none;
+  float: right;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TimelineInfinito</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+
+    <script>
+      var startTime = new Date();
+    </script>
+  </head>
+  
+  <body>
+    <div id="container">
+      <div id="loader">
+        <%= image_tag 'ajax-loader.gif' %>
+      </div>
+      <%= yield %>
+    </div>
+  </body>
+</html>

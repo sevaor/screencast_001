@@ -1,0 +1,15 @@
+<% for tweet in @timeline %>
+  <div class="tweet">
+    <div class="pic-text">
+      <div class="pic">
+        <%= image_tag tweet.user.profile_image_url %>
+      </div>
+      <div class="text">
+        <%= tweet.text %>
+      </div>
+    </div>
+    <div class="time refresh" data-timestamp="<%= tweet.created_at.to_time.strftime('%s') %>">
+      <%= time_ago tweet.created_at.to_time %>
+    </div>
+  </div>
+<% end %>

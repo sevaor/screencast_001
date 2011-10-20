@@ -1,0 +1,5 @@
+<h1 class="header">@<%= @user.twitter_name %></h1>
+
+<div class="tweets" data-timestamp="<%= Time.now.strftime('%s') %>" data-user-id="<%= @user.id %>" data-page="1">
+  <%= render 'tweets' %>
+</div>

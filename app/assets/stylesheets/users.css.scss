@@ -1,0 +1,33 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tweets {
+  font-size: 18px;
+  overflow: auto;
+
+  .tweet {
+    padding: 15px 0;
+    border-bottom: 2px solid #777;
+
+    .pic-text {
+      overflow: hidden;
+      width: 100%;
+
+      .pic {
+        width: 12%;
+        float: left;
+      }
+
+      .text {
+        width: 88%;
+        float: left;
+      }
+    }
+
+    .time {
+      font-size: 12px;
+      color: #aaa;
+    }
+  }
+}
